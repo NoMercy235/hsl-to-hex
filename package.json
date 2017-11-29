@@ -1,27 +1,35 @@
 {
-    "name": "hsl-to-hex",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "lint": "standard",
-        "test": "npm run lint && tap --cov test"
-    },
-    "author": "Alexandru Florian Barascu",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/NoMercy235/hsl-to-hex.git"
-    },
-    "bugs": {
-        "url": "https://github.com/NoMercy235/hsl-to-hex/issues"
-    },
-    "homepage": "https://github.com/NoMercy235/hsl-to-hex#readme",
-    "description": "",
-    "dependencies": {
-        "hsl-to-rgb-for-reals": "^1.1.0"
-    },
-    "devDependencies": {
-        "standard": "^10.0.3",
-        "tap": "^11.0.0"
-    }
+  "name": "@nomercy235/hsl-to-hex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && tap --cov test"
+  },
+  "author": "Alexandru Florian Barascu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoMercy235/hsl-to-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NoMercy235/hsl-to-hex/issues"
+  },
+  "homepage": "https://github.com/NoMercy235/hsl-to-hex#readme",
+  "description": "Convert HSL colors to RGB colors in hex format. ## Install ```sh npm install --save @nomercy235/hsl-to-hex ``` ## API ``` require('hsl-to-hex') => Function hsl(hue, saturation, luminosity)` => String ``` ## Example ```js var hsl = require('hsl-to-hex') var hue = 133 var saturation = 40 var luminosity = 60 var hex = hsl(hue, saturation, luminosity) console.log(hex) // #70c282 ``` ## License MIT",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tap": "^11.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "hsl",
+    "hex",
+    "convertor"
+  ]
 }
